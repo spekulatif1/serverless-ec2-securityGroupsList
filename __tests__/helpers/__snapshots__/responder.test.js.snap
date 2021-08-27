@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`responder responder.fallbacks.to.HTTP.500.with.not.defined.error.code 1`] = `
+Object {
+  "body": "{\\"errors\\":[{\\"detail\\":\\"testing.with.not.defined.error.code\\",\\"title\\":\\"Internal Server Error\\"}]}",
+  "statusCode": 500,
+}
+`;
+
+exports[`responder responder.generates.HTTP.200.response 1`] = `
+Object {
+  "body": "{\\"data\\":[{\\"type\\":\\"articles\\",\\"id\\":\\"1\\",\\"attributes\\":{\\"title\\":\\"JSON:API paints my bikeshed!\\"}}]}",
+  "statusCode": 200,
+}
+`;
+
+exports[`responder responder.generates.HTTP.500.response 1`] = `
+Object {
+  "body": "{\\"errors\\":[{\\"detail\\":\\"testing.purposes\\",\\"title\\":\\"Internal Server Error\\"}]}",
+  "statusCode": 500,
+}
+`;

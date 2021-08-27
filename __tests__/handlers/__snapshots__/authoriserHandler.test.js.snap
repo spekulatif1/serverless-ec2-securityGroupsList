@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`authorizerHandler authorizerHandler.allows.requests 1`] = `
+Object {
+  "policyDocument": Object {
+    "Statement": Array [
+      Object {
+        "Action": "execute-api:Invoke",
+        "Effect": "Allow",
+        "Resource": "arn:aws:execute-api:us-east-1:test-api/dev/GET",
+      },
+    ],
+    "Version": "2012-10-17",
+  },
+  "principalId": "user",
+}
+`;
+
+exports[`authorizerHandler authorizerHandler.denies.requests 1`] = `
+Object {
+  "policyDocument": Object {
+    "Statement": Array [
+      Object {
+        "Action": "execute-api:Invoke",
+        "Effect": "Deny",
+        "Resource": "arn:aws:execute-api:us-east-1:test-api/dev/GET",
+      },
+    ],
+    "Version": "2012-10-17",
+  },
+  "principalId": "user",
+}
+`;
+
+exports[`authorizerHandler authorizerHandler.returns.error.with.invalid.token 1`] = `"Error: Invalid token"`;
+
+exports[`authorizerHandler authorizerHandler.unauthorize.requests 1`] = `"Unauthorized"`;

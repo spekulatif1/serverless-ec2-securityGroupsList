@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generatePolicy generate.allow.policy 1`] = `
+Object {
+  "principalId": Object {
+    "effect": "Allow",
+    "principalId": "user",
+    "resource": "arn:aws:execute-api:us-east-1:test-api/dev/GET",
+  },
+}
+`;
+
+exports[`generatePolicy generate.deny.policy 1`] = `
+Object {
+  "principalId": Object {
+    "effect": "Deny",
+    "principalId": "user",
+    "resource": "arn:aws:execute-api:us-east-1:test-api/dev/GET",
+  },
+}
+`;
