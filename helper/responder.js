@@ -18,9 +18,10 @@ function build(body, statusCode) {
 }
 
 function buildErrorResponse(errorMessage, responseCode) {
-	const { title, statusCode } = errorResponses.hasOwnProperty(responseCode) ?
-		errorResponses[responseCode] :
-			errorResponses[FALLBACK_ERROR_CODE]
+	const { title, statusCode } = errorResponses
+		.hasOwnProperty(responseCode) ?
+			errorResponses[responseCode] :
+				errorResponses[FALLBACK_ERROR_CODE]
 
 	const errorResponseObject = {
 		errors: [{

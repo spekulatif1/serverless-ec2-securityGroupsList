@@ -2,7 +2,7 @@
 
 const {
 	index: authorizerHandler
-} = require('../../handlers/authorizer');
+} = require('../../handler/authorizer');
 
 const handlerTestEvent = {
 	methodArn: 'arn:aws:execute-api:us-east-1:test-api/dev/GET'

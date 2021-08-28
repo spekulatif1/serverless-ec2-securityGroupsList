@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`securityGroupsHandler securityGroupsHandler.HTTP.200 1`] = `
+Object {
+  "body": "{\\"data\\":[{\\"Description\\":\\"TrendMicro-Assignment-Test\\",\\"GroupName\\":\\"TrendMicro-Assignment-Test\\",\\"IpPermissions\\":[{\\"FromPort\\":80,\\"IpProtocol\\":\\"tcp\\",\\"IpRanges\\":[{\\"CidrIp\\":\\"0.0.0.0/0\\"}],\\"Ipv6Ranges\\":[{\\"CidrIpv6\\":\\"::/0\\"}],\\"PrefixListIds\\":[],\\"ToPort\\":80,\\"UserIdGroupPairs\\":[]}],\\"OwnerId\\":\\"TrendMicro\\",\\"GroupId\\":\\"sg-trendMicro\\",\\"IpPermissionsEgress\\":[{\\"IpProtocol\\":\\"-1\\",\\"IpRanges\\":[{\\"CidrIp\\":\\"0.0.0.0/0\\"}],\\"Ipv6Ranges\\":[],\\"PrefixListIds\\":[],\\"UserIdGroupPairs\\":[]}],\\"VpcId\\":\\"vpc-trendMicro\\"}]}",
+  "statusCode": 200,
+}
+`;
+
+exports[`securityGroupsHandler securityGroupsHandler.HTTP.500 1`] = `
+Object {
+  "body": "{\\"errors\\":[{\\"detail\\":\\"\\",\\"title\\":\\"Internal Server Error\\"}]}",
+  "statusCode": 500,
+}
+`;

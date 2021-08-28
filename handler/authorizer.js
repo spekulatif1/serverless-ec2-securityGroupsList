@@ -3,7 +3,7 @@
 const {
 	awsAuthoriserPolicy: {
 		generatePolicy
-}} = require('../helpers');
+}} = require('../helper');
 
 exports.index = async(event) => {
 	const token = event.authorizationToken;

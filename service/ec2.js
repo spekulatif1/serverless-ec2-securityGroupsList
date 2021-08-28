@@ -6,7 +6,7 @@ const { ec2: {
 
 const { responder: {
 	buildSuccessResponse
-}} = require('../helpers');
+}} = require('../helper');
 
 async function listSecurityGroups() {
 	console.log(
@@ -17,8 +17,8 @@ async function listSecurityGroups() {
 	let nextToken;
 
 	do {
-		const awsResponse = await getSecurityGroups();
-
+		const awsResponse = await getSecurityGroups(nextToken);
+		console.log('anan', { awsResponse });
 		const {
 			SecurityGroups: awsSecurityGroupsList
 		} = awsResponse;

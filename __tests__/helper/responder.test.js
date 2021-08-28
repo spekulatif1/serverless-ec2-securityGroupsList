@@ -2,7 +2,7 @@
 
 const {
 	responder
-} = require('../../helpers');
+} = require('../../helper');
 
 describe('responder', () => {
 	test('responder.generates.HTTP.200.response', (done) => {

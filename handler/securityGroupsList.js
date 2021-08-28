@@ -7,7 +7,7 @@ const { ec2: {
 const {
 	responder: {
 		buildErrorResponse
-}} = require('../helpers');
+}} = require('../helper');
 
 exports.index = async(event, context) => {
 	try {

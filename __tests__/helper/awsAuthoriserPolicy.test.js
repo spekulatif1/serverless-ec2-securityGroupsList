@@ -3,7 +3,7 @@
 const {
 	awsAuthoriserPolicy: {
 		generatePolicy
-}} = require('../../helpers');
+}} = require('../../helper');
 
 const testPayload = {
 	principalId: 'user',

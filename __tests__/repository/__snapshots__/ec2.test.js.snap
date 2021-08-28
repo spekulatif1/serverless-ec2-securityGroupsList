@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ec2.repository ec2.repository.securityGroups.success 1`] = `
+Object {
+  "$metadata": Object {
+    "attempts": 1,
+    "httpStatusCode": 200,
+    "requestId": "test.request.id",
+    "totalRetryDelay": 0,
+  },
+  "SecurityGroups": Array [
+    Object {
+      "Description": "TrendMicro-Assignment-Test",
+      "GroupId": "sg-trendMicro",
+      "GroupName": "TrendMicro-Assignment-Test",
+      "IpPermissions": Array [
+        Object {
+          "FromPort": 80,
+          "IpProtocol": "tcp",
+          "IpRanges": Array [
+            Object {
+              "CidrIp": "0.0.0.0/0",
+            },
+          ],
+          "Ipv6Ranges": Array [
+            Object {
+              "CidrIpv6": "::/0",
+            },
+          ],
+          "PrefixListIds": Array [],
+          "ToPort": 80,
+          "UserIdGroupPairs": Array [],
+        },
+      ],
+      "IpPermissionsEgress": Array [
+        Object {
+          "IpProtocol": "-1",
+          "IpRanges": Array [
+            Object {
+              "CidrIp": "0.0.0.0/0",
+            },
+          ],
+          "Ipv6Ranges": Array [],
+          "PrefixListIds": Array [],
+          "UserIdGroupPairs": Array [],
+        },
+      ],
+      "OwnerId": "TrendMicro",
+      "VpcId": "vpc-trendMicro",
+    },
+  ],
+}
+`;
