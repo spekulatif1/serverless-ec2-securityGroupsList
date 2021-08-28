@@ -18,7 +18,7 @@ async function listSecurityGroups() {
 
 	do {
 		const awsResponse = await getSecurityGroups(nextToken);
-		console.log('anan', { awsResponse });
+
 		const {
 			SecurityGroups: awsSecurityGroupsList
 		} = awsResponse;
